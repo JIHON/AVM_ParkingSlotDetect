@@ -17,8 +17,6 @@
 from ultralytics import YOLO
 
 model = YOLO("result/weights/best.pt")
-
-
 results = model.predict(source='your img path', save=True)
 ```
 
@@ -36,10 +34,17 @@ val_batch
 
 ![1787120019014](image/README/1787120019014.jpg)  ![1787120032960](image/README/1787120032960.jpg)
 
-## 4.效果如下
+## 4.效果如下(V2)
 
-![1787118207551](image/README/1787118207551.jpg) 
+![1787732678932](image/README/1787732678932.jpg)  ![1787733284848](image/README/1787733284848.jpg)
 
 ## 5.尚存问题
 
 斜列车位样本较少，还需增加样本，另外斜列车位矩形框无法提供其精确角点位置，实际部署时还需结合角点检测或其他方案
+
+## 6.update log
+
+* [X] 2026.8.19, version:0.0.0.1. Trained 80 epochs. The initial model was trained by directly finding the minimum bounding rectangle using a dataset of 20,000 Boden images.
+* [X] 2026.8.26, version:0.0.0.2. Correct slots type：Correct the inclined vertical(origin is oblique)  to vertical , with "oblique" referring only to slant parking slots. Additionally, rectify other obvious errors in vertical and horizontal and status.
+
+![1787732471995](image/README/1787732471995.png)
