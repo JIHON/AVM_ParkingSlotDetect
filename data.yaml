@@ -1,0 +1,17 @@
+names:
+- V_cpl_empty
+- V_incpl_empty
+- V_cpl_occp
+- V_incpl_occp
+- H_cpl_empty
+- H_incpl_empty
+- H_cpl_occp
+- H_incpl_occp
+- S_cpl_empty
+- S_incpl_empty
+- S_cpl_occp
+- S_incpl_occp
+nc: 12
+path: /kaggle/input/datasets/hong520/vhs-slots-fix-minlen/
+train: train/images
+val: val/images
